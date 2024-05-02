@@ -15,7 +15,7 @@ provider "aws" {
 
 module "eks_cluster" {
   #source = "./eks-module"
-  source = "github.com/lily4499/terraform-aws-eks-v3.git"
+  source = "github.com/lily4499/terraform-aws-eks-v3.git/eks-module"
   region         = var.region 
   vpc_id         = "aws_vpc.eks_vpc.id"
   vpc_cidr       = var.vpc_cidr
